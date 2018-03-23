@@ -1,0 +1,38 @@
+<div class="container" style="border: 1px solid grey;margin-top: 40px;padding: 18px 0px 60px 41px;">
+  <div class="row">
+    <h2>Search Image</h2>
+    <div class="container">
+      <input type="text" class="col-md-3 col-lg-3" placeholder="type something...." data-ng-model="tags"/>
+      <button type="submit"  ng-disabled="tags.length > 0 ? false : true" data-ng-click="getImage()" class="btn btn-primary">Search</button>
+
+    </div>
+  </div>
+  <div class="container" id="canvasImageDiv" style="margin-bottom:5px;margin-top: 35px;">
+  </div>
+  <div class="row" ng-show="show" style="margin-top: 35px;">No Images Saved Yet..</div>
+
+</div>
+
+<div class="modal fade" data-backdrop="static" id="model" role="dialog">
+  <div class="modal-dialog" style=" height: 500px;;">
+    <!-- Modal content-->
+    <div class="modal-content" style="height: 400px%;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">X</button>
+        <h4 class="modal-title" style="font-size:1.0em;">Loading Image</h4>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <canvas id="myCanvas" class="img-responsive" width="500" height="400" style="border:1px solid #000000;">
+          
+        </canvas>
+      </div>
+      <div class="modal-footer">
+        <button type="button" style="margin-left:10px;" ng-click="saveImage()" class="btn button-success ">Save</button>
+        <button type="button" style="margin-left:10px;" class="btn button-primary " data-ng-click="addText()">Add Text</button>
+		<button type="button" style="margin-left:10px;" class="btn button-primary " data-ng-click="deleteText()">Delete Text</button>
+		<button type="button" style="margin-left:10px;" class="btn button-primary " data-ng-click="addlLne()">Add Line</button>
+		<button type="button" style="margin-left:10px;" class="btn button-primary " data-ng-click="removelLne()">Delete Line</button>
+      </div>
+    </div>
+  </div>
+</div>

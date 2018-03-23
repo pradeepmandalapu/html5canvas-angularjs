@@ -1,0 +1,25 @@
+{
+  "name": "imagewidget",
+  "version": "1.0.0",
+  "description": "create a directive having canvas, loading image from external flicker.js and do some operations on the image using fabric.js and save the data in json format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-express": "^1.4.1",
+    "jshint-stylish": "latest"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.4",
+    "grunt-express": "^1.4.1"
+  },
+  "author": "pradeep",
+  "license": "ISC"
+}
